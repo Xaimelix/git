@@ -27,8 +27,7 @@ class A(Ui_MainWindow, QMainWindow):
 
     def draw(self, qp):
         a = ([randint(1, 500)] * 2)
-        print(a)
-        qp.setBrush(QColor(255, 255, 0))
+        qp.setBrush(QColor(randint(1, 255), randint(1, 255), randint(1, 255)))
         qp.drawEllipse(QPoint(400, 300), *a)
 
 
